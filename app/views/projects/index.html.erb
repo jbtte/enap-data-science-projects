@@ -16,19 +16,18 @@
   </div>
 </form>
 <hr>
+  <div class="d-flex justify-content-around flex-wrap">
+    <% @projects.each do |project| %>
 
-<% @projects.each do |project| %>
-
-  <div class="card-project">
-    <div class="card-colab">
-        <script src=<%=project.path%>></script>
-    </div>
-
-    <div class="card-project-infos">
-      <h2><%= project.title%></h2>
-    </div>
+      <div class="card-project">
+        <div class="card-project-infos">
+          <h5 class="pt-2 pl-2"><%= project.title%></h5>
+          <p class="pl-2"><%= project.name%></p>
+        </div>
+        <div class="card-colab">
+            <script src=<%=project.path%>></script>
+        </div>
+      </div>
+    <% end %>
   </div>
-
-<% end %>
-
 </div>

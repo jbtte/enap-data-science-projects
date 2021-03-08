@@ -13,7 +13,7 @@
 
   <body>
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-      <%= link_to "#", class: "navbar-brand" do %>
+      <%= link_to "http://enap.gov.br/", class: "navbar-brand" do %>
         <%= image_tag('enap.png') %>
       <% end %>
 
@@ -21,16 +21,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <i class="fas fa-bars"></i>
+          <li class="nav-item active ">
+            <%= link_to "Adicione seu projeto", new_project_path, class: "nav-link text-white" %>
+          </li>
         </ul>
       </div>
     </div>
-
-
 
         <%= yield %>
 

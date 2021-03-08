@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card-new d-flex justify-content-around mt-4 mx-auto">
+    <%= simple_form_for @project do  |f| %>
+      <%= f.input :name %>
+      <%= f.input :title %>
+      <%= f.input :path %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
+
+<hr>
