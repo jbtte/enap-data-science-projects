@@ -1,10 +1,10 @@
 <div class="container">
   <div class="card-new d-flex justify-content-around mt-4 mx-auto">
     <%= simple_form_for @project do  |f| %>
-      <%= f.input :name %>
-      <%= f.input :title %>
-      <%= f.input :path %>
-      <%= f.button :submit %>
+      <%= f.input :name, label: 'Nome' %>
+      <%= f.input :title, label: 'Título' %>
+      <%= f.input :path, label: 'Endereço do Gist' %>
+      <%= f.button :submit, 'Adicione seu projeto', class: "btn btn-primary mx-auto my-1" %>
     <% end %>
   </div>
 </div>
