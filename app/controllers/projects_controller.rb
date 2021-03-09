@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    #@projects = Project.all
+    @projects = Project.search(params[:search])
   end
 
   def new
@@ -24,6 +25,6 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.require(:project).permit(:name, :path, :title)
+    params.require(:project).permit(:name, :path, :title, :search)
   end
 end
