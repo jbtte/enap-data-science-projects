@@ -1,4 +1,5 @@
 <div class="container">
+  <h4 class="mt-5 mx-auto text-center">Adicione as informações do seu projeto</h4>
   <div class="card-new d-flex justify-content-around mt-4 mx-auto">
     <%= simple_form_for @project do  |f| %>
       <%= f.input :name, label: 'Nome' %>
@@ -9,7 +10,7 @@
   </div>
   <hr>
   <div class="explain">
-    <h3 class="mx-auto">Para obter o link necessário para disponibilizar seu caderno Colab</h3>
+    <h4 class="mt-5 mx-auto text-center">Para obter o endereço Gist do caderno Colab</h4>
     <div class="passo d-flex mt-4">
       <img src="https://miro.medium.com/max/700/1*5ZAiknBdIofcVsWZmltxHQ.png" alt="">
       <p class='my-auto ml-2'>Passo 1: Save seu Colab como Gist (Colab -> Arquivo -> Salvar uma cópia como Gist no GitHub)</p>
