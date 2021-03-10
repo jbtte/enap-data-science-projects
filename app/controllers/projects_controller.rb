@@ -1,6 +1,8 @@
 class ProjectsController < ApplicationController
+
+  before_action :check_for_lockup, only: [:new]
+
   def index
-    #@projects = Project.all
     @projects = Project.search(params[:search])
   end
 

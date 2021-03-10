@@ -7,6 +7,20 @@
       <%= f.button :submit, 'Adicione seu projeto', class: "btn btn-primary mx-auto my-1" %>
     <% end %>
   </div>
+  <hr>
+  <div class="explain">
+    <h3 class="mx-auto">Para obter o link necessário para disponibilizar seu caderno Colab</h3>
+    <div class="passo d-flex mt-4">
+      <img src="https://miro.medium.com/max/700/1*5ZAiknBdIofcVsWZmltxHQ.png" alt="">
+      <p class='my-auto ml-2'>Passo 1: Save seu Colab como Gist (Colab -> Arquivo -> Salvar uma cópia como Gist no GitHub)</p>
+    </div>
+    <div class="passo d-flex mt-5">
+      <img src="https://miro.medium.com/max/700/1*yEY5dHeDaGFcCYl7M5_rmw.png" alt="">
+      <p class='my-auto ml-2'>Passo 2: Faça o seu Gist público (Gist -> Edit -> Make public)</p>
+    </div>
+    <div class="passo passo-final d-flex my-5">
+      <%= image_tag('passo-3.png') %>
+      <p class='my-auto ml-2'>Passo 3: Na barra embed copiar somente o endereço (sem as tags, só o que está dentro do src=)</p>
+    </div>
+  </div>
 </div>
-
-<hr>

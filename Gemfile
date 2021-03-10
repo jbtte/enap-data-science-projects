@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'simple_form'
 
+# Place a staging server behind a basic codeword
+gem 'lockup', '~> 1.4'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
